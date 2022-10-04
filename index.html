@@ -24,22 +24,57 @@
             color: #d1633c;
             font-size: 2em;
         }
+
+        #toc_container {
+            background: lightblue none repeat scroll 0 0;
+            border: 1px solid rgb(12, 56, 231);
+            display: table;
+            font-size: 95%;
+            margin-bottom: 1em;
+            padding: 15px;
+            width: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .toc_title {
+            font-weight: 700;
+            text-align: center;
+        }
+
+        i {
+            padding: 5px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div id="toc_container" :toc: >
+        <p class="toc_title">Contents</p>
+        <ul class="toc_list">
+        <li><a href="#First_Point_Header">Greetings</a></li>
+        <li><a href="#Second_Point_Header">Biography</a></li>
+        <li><a href="#Third_Point_Header">Interests</a></li>
+        <li><a href="#Fourth_Point_Header">Education</a></li>
+        <li><a href="#Fifth_Point_Header">Skills</a></li>
+        <li><a href="#Sixth_Point_Header">Posters</a></li>
+        <li><a href="#Seventh_Point_Header">Publications</a></li>
+        <li><a href="#Eighth_Point_Header">Talks and workshops</a></li>
+        <li><a href="#Ninth_Point_Header">Contact</a></li>
+        </ul>
+        </div>
 <h1><img src="./me2.png" width="300" height="300" alt="my pic"><br>Rodolfo L. Chavez-Dominguez</h1>
 
 
-<h2>Greetings</h2>
+<h2 id="First_Point_Header">Greetings</h2>
 
 <p>Thanks for visiting my academic website. This page has the goal to provide information about my academic background. If you have some questions, please do not hesitate in contact me.</p>
 
-<h2>Biography</h2>
+<h2 id="Second_Point_Header">Biography</h2>
 <p>I am a PhD student at the Universidad Nacional Autonoma de Mexico, coursing the program of Biomedicine at Posgrado en Ciencias Biologicas. I am working on my research at the Laboratorio de Cancer Pulmonar under the supervision of Dr. Jose Sullivan Lopez Gonzalez. Our research goal is to study the underlying mechanisms associated with chemotherapy resistance in lung adenocarcinoma cell lines and lung cancer samples using own and publicly RNA-seq data. Additionally, I am colaborating in a research project focused on the studying of the immune infiltrate in lung adenocarcinoma samples, analyzing TCGA data.</p>
 
-<h2>Interests</h2>
+<h2 id="Third_Point_Header">Interests</h2>
 
 <li>Transcriptomics</li>
 <li>Computer biology</li>
@@ -51,23 +86,23 @@
 <li>Cancer</li>
 <li>Lung cancer</li>
 
-<h2>Education</h2>
+<h2 id="Fourth_Point_Header">Education</h2>
 <li>PhD in Biomedicine (2018 - present)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico </li>
 
 <li>Master of Science in Biomedicine (2017)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico</li>
 
 <li>Bachelor in Chemistry (2014)<br>Facultad de Quimica, Universidad Nacional Autonoma de Mexico</li>
 
-<h2>Skills</h2>
+<h2 id="Fifth_Point_Header">Skills</h2>
 
-<i class="fa-brands fa-r-project" style="font-size: 60px;"></i> 70% 
- 
-<i class="fa-brands fa-python" style="font-size: 60px;"></i> 20%
+<td>
+    <i class="fa-brands fa-r-project" style="font-size: 60px;padding-right: 50px;"></i>
+    <i class="fa-brands fa-python" style="font-size: 60px;padding-right: 50px;"></i> 
+    <i class="fa-brands fa-html5" style="font-size: 60px;padding-right: 50px;"></i> 
+</td>
 
-<i class="fa-brands fa-html5" style="font-size: 60px;"></i> 20%
 
-
-<h2>Posters</h2>
+<h2 id="Sixth_Point_Header">Posters</h2>
 
 <li>1. Chavez-Dominguez R, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Galicia-Velasco M, Lopez-Gonzalez J, Aguilar-Cazares D (2021). Identification of the transcriptional signature associated to cisplatin-persister state in lung adenocarcinoma cell lines. In EACR.</li> <br>
 
@@ -80,7 +115,7 @@
 <li>5. Chavez-Dominguez R, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). El erlotinib induce muerte por apoptosis con la emision de marcadores asociados a muerte inmunogenica en lineas celulares de cancer de pulmon. </li> <br>
 
 
-<h2>Publications</h2>
+<h2 id="Seventh_Point_Header">Publications</h2>
 
 <li>1. Aguilar-Cazares, D., <strong>Chavez-Dominguez, R.</strong>, Marroquin-Mucino, M., Perez-Medina, M., Benito-Lopez, J. J., Camarena, A., Rumbo-Nava, U., & Lopez-Gonzalez, J. S. (2022). The systemic-level repercussions of cancer-associated inflammation mediators produced in the tumor microenvironment. Frontiers in endocrinology, 13, 929572. https://doi.org/10.3389/fendo.2022.929572</li> <a href="https://www.frontiersin.org/articles/10.3389/fendo.2022.929572/full"><button>DOI</button></a><br>
 
@@ -102,7 +137,7 @@
 
 <br>
 
-<h2>Talks and workshops</h2>
+<h2 id="Eighth_Point_Header">Talks and workshops</h2>
 
 <li>Celulas y moleculas de la respuesta inmune. Una vision general in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li> <br>
 
@@ -111,7 +146,7 @@
 
 <li>Panorama general de analisis de datos de RNA-seq con R. Introduccion al analisis de RNA utilizando DESeq2. Ana B Villasenor-Altamirano, <strong>Rodolfo L. Chavez-Dominguez</strong></li> <br>
 
-<h2>Contact</h2>
+<h2 id="Ninth_Point_Header">Contact</h2>
 
 <i class="fa-solid fa-envelope" style="font-size: 30px;"></i> rodolfo_chvz@outlook.com <br>
 
