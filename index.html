@@ -91,6 +91,30 @@ body {
   padding: 20px;
 }
 
+/* Sidebar/left column */
+.sidealt {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: #F7F7FF;
+  padding: 20px;
+}
+
+/* Main column */
+.mainalt {   
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: #F7F7FF;
+  padding: 20px;
+}
+
+/* Center an image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Fake image, just for this example */
 .padding {  
   display: block;
@@ -107,7 +131,7 @@ body {
 /* Content section */
 .content {
   padding: 100px;
-  text-align: justify;
+  text-align: center;
   background-color: #E1E2EF;
 }
 
@@ -137,97 +161,122 @@ div.item {
     display: block;
 }
 
+a {
+   text-decoration: none !important;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: #BDD5EA;
+    position: relative;
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 </style>
 </head>
 <body>
-
-<div class="header">
-    <h1>Rodolfo L. Chavez-Dominguez</h1>
-    <p><p>Thanks for visiting my academic website. This page has the goal to provide information about my academic background. If you have some questions, please do not hesitate in contact me.</p></p>
-</div>
-
-<div class="navbar">
-    <a href="#Second_Point_Header" class="active">Biography</a>
-    <a href="#Third_Point_Header" class="active">Interests</a>
-    <a href="#Fourth_Point_Header" class="active">Education</a>
-    <a href="#Fifth_Point_Header" class="active">Skills</a>
-    <a href="#Sixth_Point_Header" class="active">Posters</a>
-    <a href="#Seventh_Point_Header" class="active">Publications</a>
-    <a href="#Eighth_Point_Header" class="active">Talks and workshops</a>
-    <a href="#Ninth_Point_Header" class="active">Contact</a>
-</div>
-
-<div class="content">
-  <p style="float: left; margin-right: 100px; margin-left: 0%;"><img src="./me2.png" width="275" height="275" alt="my_pic"></p>
-  <h2 id="Second_Point_Header" style="font-size: 50px;">Biography</h2>
-  <p style="font-size: 20px;">I studied the PhD at the Universidad Nacional Autonoma de Mexico in the program of Biomedicine at Posgrado en Ciencias Biologicas. My research is focused on studying the underlying mechanisms associated with chemotherapy resistance in cancer samples using own and publicly RNA-seq data.</p>
-  <br>
-  <p style="float: left;">
-    <a href="https://github.com/necrosnake91" class="fa-brands fa-github" style="font-size: 60px;margin-right: 30px;color: #347FC4;"></a>
-    <a href="https://twitter.com/Rodolfo_chvz" class="fa-brands fa-twitter" style="font-size: 60px;margin-right: 30px; color: #347FC4;"></a>
-    <a href="https://orcid.org/0000-0002-4097-6011" class="fa-brands fa-orcid" style="font-size: 60px;margin-right: 30px; color: #347FC4;"></a>
-    <a href="https://scholar.google.com/citations?user=ClwWMQwAAAAJ&hl=es" class="fa-solid fa-graduation-cap" style="font-size: 60px; margin-right: 30px; color: #347FC4;"></a>
-  </p>
-</div>
-
-<div class="row">
-    <div class="side">
-    <h2 id="Third_Point_Header">Interests</h2>
-    <li>Transcriptomics</li>
-    <li>Computer biology</li>
-    <li>Big data analysis</li>
-    <li>Bioinformatics</li>
-    <li>Biochemistry</li>
-    <li>Cell Biology</li>
-    <li>Immunology</li>
-    <li>Cancer</li>
-    <br>
-
-    <h2 id="Fourth_Point_Header">Education</h2>
-    <p><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>PhD in Biomedicine (2018 - present)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico </p>
-    <p><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Master of Science in Biomedicine (2017)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico</p>
-    <p><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Bachelor in Chemistry (2014)<br>Facultad de Quimica, Universidad Nacional Autonoma de Mexico</p>
-    <br>
-    <h2 id="Fifth_Point_Header">Skills</h2>
-    <i class="fa-brands fa-r-project" style="font-size: 80px;padding-right: 40px;color: #366ac4;"></i>
-    <i class="fa-brands fa-python" style="font-size: 80px;padding-right: 40px;color: #366ac4;"></i> 
-    <i class="fa-brands fa-html5" style="font-size: 80px;padding-right: 40px;color: #366ac4;"></i> 
+    <div class="header">
+        <h1>Greetings</h1>
+        <p><p style="font-size: 25px;">Thanks for visiting my academic website. This page has the goal to provide information about my academic background. If you have some questions, please do not hesitate in contact me.</p></p>
     </div>
-    <div class="main">
-    <h2 id="Sixth_Point_Header">Posters</h2>
-    <li>1. <b class="green">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Galicia-Velasco M, Lopez-Gonzalez J, Aguilar-Cazares D (2021). Identification of the transcriptional signature associated to cisplatin-persister state in lung adenocarcinoma cell lines. In EACR.</li> <br>
-    <li>2. <b class="green">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Lopez-Gonzalez J, Aguilar-Cazares D (2021). LncRNA expression profile in cisplatin-tolerant lung adenocarcinoma cell lines. In MDPI.</li> <br>
-    <li>3. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Salgado-Aguayo A, Islas-Vazquez L, Lopez-Gonzalez J (2017). Study of immunogenic cell death markers in lung adenocarcinoma cell lines treated with therapeutic agents. In ITOC.</li> <a href="https://f1000research.com/posters/12-1399"><button>DOI</button></a> <br>
-    <li>4. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). In  the  HCC827  lung  adenocarcinoma  cell  line,  Erlotinib  induces  apoptosis associated  with  the  expression  of  immunogenic  cell  death  markers </li> <br>
-    <li>5. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). El erlotinib induce muerte por apoptosis con la emision de marcadores asociados a muerte inmunogenica en lineas celulares de cancer de pulmon. </li> <br>
-    <br>
-
-    <h2 id="Seventh_Point_Header">Publications</h2>
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez Rodolfo</strong>, Aguilar-Cazares Dolores, Perez-Medina Mario, Avila-Rios Santiago, Soto-Nava Maribel, Mendez-Tenorio Alfonso, Islas-Vazquez Lorenzo, Benito-Lopez Jesus J., Galicia-Velasco Miriam, Lopez-Gonzalez Jose S. (2023). Transcriptional signature of early cisplatin drug-tolerant persister cells in lung adenocarcinoma. Frontiers in oncology, 13, https://doi.org/10.3389/fonc.2023.1208403</p> <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1208403/full"><button>DOI</button></a> <br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Benito-Lopez, J. J., Marroquin-Mucino, M., Perez-Medina, M., <strong class="green">Chavez-Dominguez, R.</strong>, Aguilar-Cazares, D., Galicia-Velasco, M., & Lopez-Gonzalez, J. S. (2023). Partners in crime: The feedback loop between metabolic reprogramming and immune checkpoints in the tumor microenvironment. Frontiers in oncology, 12, 1101503. https://doi.org/10.3389/fonc.2022.1101503</p> <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1101503/full"><button>DOI</button></a><br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares, D., <strong class="green">Chavez-Dominguez, R.</strong>, Marroquin-Mucino, M., Perez-Medina, M., Benito-Lopez, J. J., Camarena, A., Rumbo-Nava, U., & Lopez-Gonzalez, J. S. (2022). The systemic-level repercussions of cancer-associated inflammation mediators produced in the tumor microenvironment. In Frontiers in endocrinology</p> <a href="https://www.frontiersin.org/articles/10.3389/fendo.2022.929572/full"><button>DOI</button></a><br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez RL</strong>, Perez-Medina MA, Lopez-Gonzalez JS, Galicia-Velasco M, Matias-Florentino M, Avila-Rios S, Rumbo-Nava U, Salgado-Aguayo A, Gonzalez-Gonzalez C, Aguilar-Cazares D. Role of HMGB1 in Cisplatin-Persistent Lung Adenocarcinoma Cell Lines. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2021.750677/full"><button>DOI</button></a> <br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez R</strong>, Perez-Medina M, Aguilar-Cazares D, Galicia-Velasco M, Meneses-Flores M, Islas-Vazquez L, Camarena A, Lopez-Gonzalez JS. Old and New Players of Inflammation and Their Relationship With Cancer Development. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2021.722999/full"><button>DOI</button></a> <br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez R</strong>, Perez-Medina M, Lopez-Gonzalez JS, Galicia-Velasco M, Aguilar-Cazares D. The Double-Edge Sword of Autophagy in Cancer: From Tumor Suppression to Pro-tumor Activity. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2020.578418/full"><button>DOI</button></a> <br>
-
-    <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares D, <strong class="green">Chavez-Dominguez R</strong>, Carlos-Reyes A, Lopez-Camarillo C, Hernadez de la Cruz ON, Lopez-Gonzalez JS. Contribution of Angiogenesis to Inflammation and Cancer. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2019.01399/full"><button>DOI</button></a> <br>
-
-
-    <h2 id="Eighth_Point_Header">Talks and workshops</h2>
-    <li>Importancia del reconocimiento de enfermedades infecciosas y parasitarias como enfermedad de trabajo</li>
-    <li>Celulas y moleculas de la respuesta inmune. Una vision general in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li> <br>
-    <li>Respuesta inmune y cancer in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li> <br>
-    <li>Panorama general de analisis de datos de RNA-seq con R. Introduccion al analisis de RNA utilizando DESeq2. Ana B Villasenor-Altamirano, <strong>Rodolfo L. Chavez-Dominguez</strong></li> <br>
+    
+    <div class="navbar">
+        <a href="#Second_Point_Header" class="active">Biography</a>
+        <a href="#Third_Point_Header" class="active">Interests</a>
+        <a href="#Fourth_Point_Header" class="active">Education</a>
+        <a href="#Fifth_Point_Header" class="active">Skills</a>
+        <a href="#Sixth_Point_Header" class="active">Posters</a>
+        <a href="#Seventh_Point_Header" class="active">Publications</a>
+        <a href="#Eighth_Point_Header" class="active">Talks and workshops</a>
+        <a href="#Ninth_Point_Header" class="active">Contact</a>
     </div>
-</div>
+
+    <div class="row">
+      <div class="side">
+        <p style="margin-right: 100px; margin-left: 15%;"><img src="./me2.png" width="275" height="275" alt="my_pic"></p>
+        <p style="text-align: center; font-size: 30px;margin-bottom: 0%;">Rodolfo Luis</p>
+        <p style="text-align: center; font-size: 30px;margin-top: 0%; margin-bottom: 5%;">Chavez-Dominguez</p>
+        <p style="text-align: center; font-size: 20px; margin-bottom: 10%;">Researcher in biomedicine at the Instituto Nacional de Enfermedades Respiratorias in the Chronic Diseases Department</p>
+        <p style="text-align: center;">
+          <a href="https://github.com/necrosnake91" class="fa-brands fa-github" style="font-size: 45px;margin-right: 20px;color: #347FC4; text-decoration: none;"></a>
+          <a href="https://twitter.com/Rodolfo_chvz" class="fa-brands fa-twitter" style="font-size: 45px;margin-right: 20px; color: #347FC4;"></a>
+          <a href="https://orcid.org/0000-0002-4097-6011" class="fa-brands fa-orcid" style="font-size: 45px;margin-right: 20px; color: #347FC4;"></a>
+          <a href="https://scholar.google.com/citations?user=ClwWMQwAAAAJ&hl=es" class="fa-solid fa-graduation-cap" style="font-size: 45px; margin-right: 20px; color: #347FC4;"></a>
+          <a href="" class="fa-brands fa-linkedin" style="font-size: 45px; margin-right: 20px; color: #347FC4;"></a>
+        </p>
+      </div>
+      <div class="main">
+        <h2 id="Second_Point_Header" style="font-size: 50px;">Biography</h2>
+        <p style="font-size: 20px; text-align: justify;">I studied the PhD at the Universidad Nacional Autonoma de Mexico in the program of Biomedicine at Posgrado en Ciencias Biologicas. My research is focused on studying the underlying mechanisms associated with chemotherapy resistance in cancer samples using own and publicly RNA-seq data.</p>
+        <div class="row">
+          <div class="sidealt">
+            <h2 id="Fourth_Point_Header" style="font-size: 30px;">Education</h2>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>PhD in Biomedicine (2018 - present)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico </p>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Master of Science in Biomedicine (2017)<br>Facultad de Medicina, Universidad Nacional Autonoma de Mexico</p>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Bachelor in Chemistry (2014)<br>Facultad de Quimica, Universidad Nacional Autonoma de Mexico</p>        
+          </div>
+          <div class="mainalt" style="text-align: justify;">
+            <h2 id="Third_Point_Header" style="text-align: center; font-size: 30px;">Interests</h2>
+            <li style="text-align: center; font-size: 20px;">Transcriptomics</li>
+            <li style="text-align: center; font-size: 20px;">Computer biology</li>
+            <li style="text-align: center; font-size: 20px">Big data analysis</li>
+            <li style="text-align: center; font-size: 20px">Bioinformatics</li>
+            <li style="text-align: center; font-size: 20px">Biochemistry</li>
+            <li style="text-align: center; font-size: 20px">Cell Biology</li>
+            <li style="text-align: center; font-size: 20px">Immunology</li>
+            <li style="text-align: center; font-size: 20px">Cancer</li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 id="Fifth_Point_Header" style="font-size: 30px;">Skills</h2>
+      <i class="fa-brands fa-r-project" style="font-size: 100px;padding-right: 40px;margin-right: 10%; color: #366ac4;margin-left: 5%;"></i>
+      <i class="fa-brands fa-python" style="font-size: 100px;padding-right: 40px;margin-right: 20%; color: #366ac4;margin-left: 10%;"></i> 
+      <i class="fa-brands fa-html5" style="font-size: 100px;padding-right: 40px;margin-right: 5%; color: #366ac4;"></i>   
+    </div>
+
+    <div class="row" style="text-align: justify; font-size: 20px;">
+      <div class="sidealt">
+        <h2 id="Sixth_Point_Header" style="font-size: 30px;">Posters</h2>
+        <li>1. <b class="green">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Galicia-Velasco M, Lopez-Gonzalez J, Aguilar-Cazares D (2021). Identification of the transcriptional signature associated to cisplatin-persister state in lung adenocarcinoma cell lines. In EACR.</li><a href="https://doi.org/10.7490/f1000research.1119648.1"><button>DOI</button></a><br><br>
+        <li>2. <b class="green">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Lopez-Gonzalez J, Aguilar-Cazares D (2021). LncRNA expression profile in cisplatin-tolerant lung adenocarcinoma cell lines. In MDPI.</li><br>
+        <li>3. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Salgado-Aguayo A, Islas-Vazquez L, Lopez-Gonzalez J (2017). Study of immunogenic cell death markers in lung adenocarcinoma cell lines treated with therapeutic agents. In ITOC.</li> <a href="https://f1000research.com/posters/12-1399"><button>DOI</button></a><br><br>
+        <li>4. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). In  the  HCC827  lung  adenocarcinoma  cell  line,  Erlotinib  induces  apoptosis associated  with  the  expression  of  immunogenic  cell  death  markers </li><br>
+        <li>5. <b class="green">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). El erlotinib induce muerte por apoptosis con la emision de marcadores asociados a muerte inmunogenica en lineas celulares de cancer de pulmon. </li><br>    
+      </div>
+      <div class="mainalt" style="text-align: justify;font-size: 20px;">
+        <h2 id="Eighth_Point_Header" style="font-size: 30px;">Talks and workshops</h2>
+        <li>Estadistica basica aplicada a procesos de certificacion ISO 9001:2015</li><br>
+        <li>Importancia del reconocimiento de enfermedades infecciosas y parasitarias como enfermedad de trabajo</li><br>
+        <li>Celulas y moleculas de la respuesta inmune. Una vision general in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
+        <li>Respuesta inmune y cancer in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
+        <li>Panorama general de analisis de datos de RNA-seq con R. Introduccion al analisis de RNA utilizando DESeq2. Ana B Villasenor-Altamirano, <strong>Rodolfo L. Chavez-Dominguez</strong></li><br>    
+      </div>
+    </div>
+
+    <div class="content" style="text-align: justify; font-size: 20px;">
+      <h2 id="Seventh_Point_Header" style="font: 30px;">Publications</h2>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez Rodolfo</strong>, Aguilar-Cazares Dolores, Perez-Medina Mario, Avila-Rios Santiago, Soto-Nava Maribel, Mendez-Tenorio Alfonso, Islas-Vazquez Lorenzo, Benito-Lopez Jesus J., Galicia-Velasco Miriam, Lopez-Gonzalez Jose S. (2023). Transcriptional signature of early cisplatin drug-tolerant persister cells in lung adenocarcinoma. Frontiers in oncology, 13, https://doi.org/10.3389/fonc.2023.1208403</p> <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1208403/full"><button>DOI</button></a> <br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Benito-Lopez, J. J., Marroquin-Mucino, M., Perez-Medina, M., <strong class="green">Chavez-Dominguez, R.</strong>, Aguilar-Cazares, D., Galicia-Velasco, M., & Lopez-Gonzalez, J. S. (2023). Partners in crime: The feedback loop between metabolic reprogramming and immune checkpoints in the tumor microenvironment. Frontiers in oncology, 12, 1101503. https://doi.org/10.3389/fonc.2022.1101503</p> <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1101503/full"><button>DOI</button></a><br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares, D., <strong class="green">Chavez-Dominguez, R.</strong>, Marroquin-Mucino, M., Perez-Medina, M., Benito-Lopez, J. J., Camarena, A., Rumbo-Nava, U., & Lopez-Gonzalez, J. S. (2022). The systemic-level repercussions of cancer-associated inflammation mediators produced in the tumor microenvironment. In Frontiers in endocrinology</p> <a href="https://www.frontiersin.org/articles/10.3389/fendo.2022.929572/full"><button>DOI</button></a><br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez RL</strong>, Perez-Medina MA, Lopez-Gonzalez JS, Galicia-Velasco M, Matias-Florentino M, Avila-Rios S, Rumbo-Nava U, Salgado-Aguayo A, Gonzalez-Gonzalez C, Aguilar-Cazares D. Role of HMGB1 in Cisplatin-Persistent Lung Adenocarcinoma Cell Lines. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2021.750677/full"><button>DOI</button></a> <br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez R</strong>, Perez-Medina M, Aguilar-Cazares D, Galicia-Velasco M, Meneses-Flores M, Islas-Vazquez L, Camarena A, Lopez-Gonzalez JS. Old and New Players of Inflammation and Their Relationship With Cancer Development. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2021.722999/full"><button>DOI</button></a> <br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="green">Chavez-Dominguez R</strong>, Perez-Medina M, Lopez-Gonzalez JS, Galicia-Velasco M, Aguilar-Cazares D. The Double-Edge Sword of Autophagy in Cancer: From Tumor Suppression to Pro-tumor Activity. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2020.578418/full"><button>DOI</button></a> <br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares D, <strong class="green">Chavez-Dominguez R</strong>, Carlos-Reyes A, Lopez-Camarillo C, Hernadez de la Cruz ON, Lopez-Gonzalez JS. Contribution of Angiogenesis to Inflammation and Cancer. In Front Oncol</p><a href="https://www.frontiersin.org/articles/10.3389/fonc.2019.01399/full"><button>DOI</button></a> <br>
+    </div>
 
     <div class="footer">
-        <h2 id="Ninth_Point_Header">Contact</h2>
+      <h2 id="Ninth_Point_Header">Contact</h2>
         <i class="fa-solid fa-envelope" style="font-size: 30px;margin-right: 30px;"></i>rodolfo_chvz@outlook.com<br>
         <br>
         <i class="fa-brands fa-github" style="font-size: 30px;margin-right: 30px;"></i> <a href="https://github.com/necrosnake91" target="_blank" style="font-size: 20px;">necrosnake91</a> <br>
@@ -235,8 +284,4 @@ div.item {
         <i class="fa-brands fa-twitter" style="font-size: 30px;margin-right: 30px;"></i> <a href="https://twitter.com/Rodolfo_chvz" style="font-size: 20px;">@Rodolfo_chvz</a><br>
         <br>
         <i class="fa-brands fa-orcid" style="font-size: 30px;margin-right: 30px;"></i> <a href="https://orcid.org/0000-0002-4097-6011" target="_blank" style="font-size: 20px;">Rodolfo L. Chavez-Dominguez</a>
-
     </div>
-</body>
-
-</html>
