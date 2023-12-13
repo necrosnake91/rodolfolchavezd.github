@@ -5,264 +5,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/c57992dda8.js" crossorigin="anonymous"></script>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 50px;
-  text-align: center;
-  background: #1D3461;
-  color: #F7F7FF;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Active/current link */
-.navbar a.active {
-  background-color: #666;
-  color: white;
-}
-
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #363946;
-  color: #F7F7FF;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: #363946;
-  color: #F7F7FF;
-  padding: 20px;
-}
-
-/* Sidebar/left column */
-.sidealt {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  background-color: #363946;
-  color: #F7F7FF;
-  padding: 20px;
-}
-
-/* Main column */
-.mainalt {   
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  background-color: #363946;
-  color: #F7F7FF;
-  padding: 20px;
-}
-
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
-
-/* Content section */
-.content {
-  padding: 70px;
-  background-color: #696773;
-  color: #F7F7FF;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-
-div.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 120px;
-}
-
-.caption {
-    display: block;
-}
-
-a {
-   text-decoration: none !important;
-}
-
-/* Align elements of a list */
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-
-/* Colored button */
-
-.button {
-  padding: 4px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.button1 {
-  background-color: #F7F7FF; 
-  color: black; 
-  border: 2px solid #313B72;
-}
-
-.button1:hover {
-  background-color: #313B72;
-  color: white;
-}
-
-/* Font family */
-.fontfam {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* color */
-.blue {
-  color: #5DA9E9;
-}
-
-.sidebar-social {
-    margin: 0;
-    padding: 70px;
-    background-color: #696773;
-    color: #F7F7FF;
-}
-
-.sidebar-social ul {
-    margin: 0;
-    padding: 5px;
-    background-color: #696773;
-    color: #F7F7FF;
-}
-
-.sidebar-social li {
-	  text-align: center;
-    width: 31.9%;
-    margin-bottom: 3px!important;
-    border: 1px; 
-    display: inline-block;
-    font-size: 10px;
-    padding:0;
-    background-color: #696773;
-    color: #F7F7FF;
-}
-
-.sidebar-social i {
-  display: block;
-  margin: 0 auto 10px auto;
-	width: 32px;
-    height: 32px;
-    margin: 10px auto 0;
-    line-height: 32px;
-    text-align: center;
-    font-size: 20px;
-    color: #444444;
-  margin-top:0;
-  padding-top:5px;
-}
-.sidebar-social a{
-  text-decoration:none;
-  width:100%;
-  height:100%;
-  display:block;
-  margin:0;
-  padding:0;
-}
-
-.sidebar-social a span{
-  color:#F7F7FF;
-  font-size:30px;
-  padding:60px 0 10px 50px;
-  display:block;
-  text-transform:uppercase;
-  font-family:'Josefin Sans';
-  letter-spacing:1px;
-}
-
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <div class="header">
         <h1>Greetings</h1>
-        <p><p class="fontfam" style="font-size: 25px;">Thanks for visiting my academic website. This page has the goal to provide information about my academic background. If you have some questions, please do not hesitate in contact me.</p></p>
+        <p><p style="font-size: 25px;">Thanks for visiting my academic website. This page has the goal to provide information about my academic background. If you have some questions, please do not hesitate in contact me.</p></p>
     </div>
     
     <div class="navbar">
@@ -274,14 +24,20 @@ ul.myUL {
         <a href="#Seventh_Point_Header" class="active">Publications</a>
         <a href="#Eighth_Point_Header" class="active">Talks and workshops</a>
         <a href="#Ninth_Point_Header" class="active">Contact</a>
+        <div class="search-container" style="text-align: right;">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
     </div>
 
     <div class="row">
       <div class="side">
         <p style="margin-right: 100px; margin-left: 15%;"><img src="./me2.png" width="275" height="275" alt="my_pic"></p>
-        <p class="fontfam" style="text-align: center; font-size: 30px;margin-bottom: 0%;">Rodolfo Luis</p>
-        <p class="fontfam" style="text-align: center; font-size: 30px;margin-top: 0%; margin-bottom: 5%;">Chavez-Dominguez</p>
-        <p class="fontfam" style="text-align: center; font-size: 20px; margin-bottom: 10%; color: #819595;">Researcher in biomedicine at the Instituto Nacional de Enfermedades Respiratorias in the Chronic Diseases Department</p>
+        <p style="text-align: center; font-size: 30px;margin-bottom: 0%;">Rodolfo Luis</p>
+        <p style="text-align: center; font-size: 30px;margin-top: 0%; margin-bottom: 5%;">Chavez-Dominguez</p>
+        <p style="text-align: center; font-size: 20px; margin-bottom: 10%; color: #819595;">Researcher in biomedicine at the Instituto Nacional de Enfermedades Respiratorias in the Chronic Diseases Department</p>
         <p style="text-align: center;">
           <a href="https://github.com/necrosnake91" class="fa-brands fa-github" style="font-size: 45px;margin-right: 20px;color: #347FC4; text-decoration: none;"></a>
           <a href="https://twitter.com/Rodolfo_chvz" class="fa-brands fa-twitter" style="font-size: 45px;margin-right: 20px; color: #347FC4;"></a>
@@ -291,24 +47,24 @@ ul.myUL {
         </p>
       </div>
       <div class="main">
-        <h2 class="fontfam" id="Second_Point_Header" style="font-size: 50px;">Biography</h2>
-        <p class="fontfam" style="font-size: 20px; text-align: justify;">I studied the PhD at the Universidad Nacional Autonoma de Mexico in the program of Biomedicine at Posgrado en Ciencias Biologicas. My research is focused on studying the underlying mechanisms associated with chemotherapy resistance in cancer samples using own and publicly RNA-seq data.</p>
+        <h2 id="Second_Point_Header" style="font-size: 50px;">Biography</h2>
+        <p style="font-size: 20px; text-align: justify;">I studied the PhD at the Universidad Nacional Autonoma de Mexico in the program of Biomedicine at Posgrado en Ciencias Biologicas. My research is focused on studying the underlying mechanisms associated with chemotherapy resistance in cancer samples using own and publicly RNA-seq data.</p>
         <div class="row">
           <div class="sidealt">
-            <h2 class="fontfam" id="Fourth_Point_Header" style="font-size: 30px;">Education</h2>
-            <p class="fontfam" style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>PhD in Biomedicine (2018 - present)<br><p style="font-size: 17px;color: #819595;">Facultad de Medicina, Universidad Nacional Autonoma de Mexico </p></p>
-            <p class="fontfam" style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Master of Science in Biomedicine (2017)<br><p style="font-size: 17px; color: #819595;">Facultad de Medicina, Universidad Nacional Autonoma de Mexico</p></p>
-            <p class="fontfam" style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Bachelor in Chemistry (2014)<br><p style="font-size: 17px; color: #819595;">Facultad de Quimica, Universidad Nacional Autonoma de Mexico</p></p>        
+            <h2 id="Fourth_Point_Header" style="font-size: 30px;">Education</h2>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>PhD in Biomedicine (2018 - present)<br><p style="font-size: 17px;color: #819595;">Facultad de Medicina, Universidad Nacional Autonoma de Mexico </p></p>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Master of Science in Biomedicine (2017)<br><p style="font-size: 17px; color: #819595;">Facultad de Medicina, Universidad Nacional Autonoma de Mexico</p></p>
+            <p style="font-size: 20px;"><i class="fa-solid fa-graduation-cap" style="font-size: 30px;padding-right: 10px;"></i>Bachelor in Chemistry (2014)<br><p style="font-size: 17px; color: #819595;">Facultad de Quimica, Universidad Nacional Autonoma de Mexico</p></p>        
           </div>
           <div class="mainalt" style="text-align: justify; padding-right: 15%;">
-            <h2 class="fontfam" id="Third_Point_Header" style="text-align: left; font-size: 30px;margin-bottom: 0%;">Interests</h2>
+            <h2 id="Third_Point_Header" style="text-align: left; font-size: 30px;margin-bottom: 0%;">Interests</h2>
             <ul class="myUL">
-            <p class="fontfam" style="font-size: 20px; text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Transcriptomics</p>
-            <p class="fontfam" style="font-size: 20px; text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Bioinformatics</p>
-            <p class="fontfam" style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Biochemistry</p>
-            <p class="fontfam" style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Cell Biology</p>
-            <p class="fontfam" style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Immunology</p>
-            <p class="fontfam" style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Cancer</p>
+            <p style="font-size: 20px; text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Transcriptomics</p>
+            <p style="font-size: 20px; text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Bioinformatics</p>
+            <p style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Biochemistry</p>
+            <p style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Cell Biology</p>
+            <p style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Immunology</p>
+            <p style="font-size: 20px;text-align: left;"><i class="fa-solid fa-book-open" style="font-size: 30px;padding-right: 10px;"></i>Cancer</p>
             </ul>
           </div>
         </div>
@@ -316,7 +72,7 @@ ul.myUL {
     </div>
 
     <div class="sidebar-social" style="text-align: center;">
-      <h2 class="fontfam" id="Fifth_Point_Header" style="font-size: 30px; text-align: center;margin-bottom: 5%;">Skills</h2>
+      <h2 id="Fifth_Point_Header" style="font-size: 30px; text-align: center;margin-bottom: 5%;">Skills</h2>
       <ul>
         <li>
         <a title="R" target="_blank" rel="nofollow"><i class="fa-brands fa-r-project" style="font-size: 100px;color: #5DA9E9;"></i>
@@ -332,34 +88,34 @@ ul.myUL {
 
     <div class="row" style="text-align: justify; font-size: 20px;">
       <div class="sidealt">
-        <h2 class="fontfam" id="Sixth_Point_Header" style="font-size: 30px;">Posters</h2>
-        <li class="fontfam">1. <b class="blue">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Galicia-Velasco M, Lopez-Gonzalez J, Aguilar-Cazares D (2021). Identification of the transcriptional signature associated to cisplatin-persister state in lung adenocarcinoma cell lines. In EACR.</li><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">DOI</button></a><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">Poster</button></a><br><br>
-        <li class="fontfam">2. <b class="blue">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Lopez-Gonzalez J, Aguilar-Cazares D (2021). LncRNA expression profile in cisplatin-tolerant lung adenocarcinoma cell lines. In MDPI.</li><br>
+        <h2 id="Sixth_Point_Header" style="font-size: 30px;">Posters</h2>
+        <li>1. <b class="blue">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Galicia-Velasco M, Lopez-Gonzalez J, Aguilar-Cazares D (2021). Identification of the transcriptional signature associated to cisplatin-persister state in lung adenocarcinoma cell lines. In EACR.</li><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">DOI</button></a><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">Poster</button></a><br><br>
+        <li>2. <b class="blue">Chavez-Dominguez R</b>, Perez-Medina M, Soto-Nava M, Avila-Rios S, Mendez-Tenorio A, Lopez-Gonzalez J, Aguilar-Cazares D (2021). LncRNA expression profile in cisplatin-tolerant lung adenocarcinoma cell lines. In MDPI.</li><br>
         <li class="font-family">3. <b class="blue">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Salgado-Aguayo A, Islas-Vazquez L, Lopez-Gonzalez J (2017). Study of immunogenic cell death markers in lung adenocarcinoma cell lines treated with therapeutic agents. In ITOC.</li> <a href="https://f1000research.com/posters/12-1399"><button class="button button1">DOI</button></a><a href="https://f1000research.com/posters/12-1399"><button class="button button1">Poster</button></a><br><br>
-        <li class="fontfam">4. <b class="blue">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). In  the  HCC827  lung  adenocarcinoma  cell  line,  Erlotinib  induces  apoptosis associated  with  the  expression  of  immunogenic  cell  death  markers </li><br>
-        <li class="fontfam">5. <b class="blue">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). El erlotinib induce muerte por apoptosis con la emision de marcadores asociados a muerte inmunogenica en lineas celulares de cancer de pulmon. </li><br>    
+        <li>4. <b class="blue">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). In  the  HCC827  lung  adenocarcinoma  cell  line,  Erlotinib  induces  apoptosis associated  with  the  expression  of  immunogenic  cell  death  markers </li><br>
+        <li>5. <b class="blue">Chavez-Dominguez R</b>, Aguilar-Cazares D, Prado-Garcia H, Islas-Vazquez L, Lopez-Gonzalez J (2016). El erlotinib induce muerte por apoptosis con la emision de marcadores asociados a muerte inmunogenica en lineas celulares de cancer de pulmon. </li><br>    
       </div>
       <div class="mainalt" style="text-align: justify;font-size: 20px;">
-        <h2 class="fontfam" id="Eighth_Point_Header" style="font-size: 30px;">Talks and workshops</h2>
-        <li class="fontfam">Estadistica basica aplicada a procesos de certificacion ISO 9001:2015</li><br>
-        <li class="fontfam">Importancia del reconocimiento de enfermedades infecciosas y parasitarias como enfermedad de trabajo</li><br>
-        <li class="fontfam">Celulas y moleculas de la respuesta inmune. Una vision general in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
-        <li class="fontfam">Respuesta inmune y cancer in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
-        <li class="fontfam">Panorama general de analisis de datos de RNA-seq con R. Introduccion al analisis de RNA utilizando DESeq2. Ana B Villasenor-Altamirano, <strong class="blue">Rodolfo L. Chavez-Dominguez</strong></li><br>    
+        <h2 id="Eighth_Point_Header" style="font-size: 30px;">Talks and workshops</h2>
+        <li>Estadistica basica aplicada a procesos de certificacion ISO 9001:2015</li><br>
+        <li>Importancia del reconocimiento de enfermedades infecciosas y parasitarias como enfermedad de trabajo</li><br>
+        <li>Celulas y moleculas de la respuesta inmune. Una vision general in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
+        <li>Respuesta inmune y cancer in Posgrado de Ciencias Biologicas, Universidad Nacional Autonoma de Mexico.</li><br>
+        <li>Panorama general de analisis de datos de RNA-seq con R. Introduccion al analisis de RNA utilizando DESeq2. Ana B Villasenor-Altamirano, <strong class="blue">Rodolfo L. Chavez-Dominguez</strong></li><br>    
       </div>
     </div>
 
     <div class="content" style="text-align: justify; font-size: 20px;">
-      <h2 class="fontfam" id="Seventh_Point_Header" style="font: 30px;">Publications</h2>
-      <p class="fontfam"><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="blue">Chavez-Dominguez Rodolfo</strong>, Aguilar-Cazares Dolores, Perez-Medina Mario, Avila-Rios Santiago, Soto-Nava Maribel, Mendez-Tenorio Alfonso, Islas-Vazquez Lorenzo, Benito-Lopez Jesus J., Galicia-Velasco Miriam, Lopez-Gonzalez Jose S. (2023). Transcriptional signature of early cisplatin drug-tolerant persister cells in lung adenocarcinoma. Frontiers in oncology, 13, https://doi.org/10.3389/fonc.2023.1208403</p><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1208403/full"><button class="button button1">DOI</button></a><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">Poster</button></a> <br>
-      <p class="fontfam"><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Benito-Lopez, J. J., Marroquin-Mucino, M., Perez-Medina, M., <strong class="blue">Chavez-Dominguez, R.</strong>, Aguilar-Cazares, D., Galicia-Velasco, M., & Lopez-Gonzalez, J. S. (2023). Partners in crime: The feedback loop between metabolic reprogramming and immune checkpoints in the tumor microenvironment. Frontiers in oncology, 12, 1101503. https://doi.org/10.3389/fonc.2022.1101503</p><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1101503/full"><button class="button button1">DOI</button></a><br>
-      <p class="fontfam"><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares, D., <strong class="blue">Chavez-Dominguez, R.</strong>, Marroquin-Mucino, M., Perez-Medina, M., Benito-Lopez, J. J., Camarena, A., Rumbo-Nava, U., & Lopez-Gonzalez, J. S. (2022). The systemic-level repercussions of cancer-associated inflammation mediators produced in the tumor microenvironment. In Frontiers in endocrinology</p><a href="https://www.frontiersin.org/articles/10.3389/fendo.2022.929572/full"><button class="button button1">DOI</button></a><br>
-      <p class="fontfam" style="font-size: 25px;"><a href="Pub_list.html" class="blue">SEE ALL PUBLICATIONS</a></p>
+      <h2 id="Seventh_Point_Header" style="font: 30px;">Publications</h2>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i><strong class="blue">Chavez-Dominguez Rodolfo</strong>, Aguilar-Cazares Dolores, Perez-Medina Mario, Avila-Rios Santiago, Soto-Nava Maribel, Mendez-Tenorio Alfonso, Islas-Vazquez Lorenzo, Benito-Lopez Jesus J., Galicia-Velasco Miriam, Lopez-Gonzalez Jose S. (2023). Transcriptional signature of early cisplatin drug-tolerant persister cells in lung adenocarcinoma. Frontiers in oncology, 13, https://doi.org/10.3389/fonc.2023.1208403</p><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2023.1208403/full"><button class="button button1">DOI</button></a><a href="https://doi.org/10.7490/f1000research.1119648.1"><button class="button button1">Poster</button></a> <br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Benito-Lopez, J. J., Marroquin-Mucino, M., Perez-Medina, M., <strong class="blue">Chavez-Dominguez, R.</strong>, Aguilar-Cazares, D., Galicia-Velasco, M., & Lopez-Gonzalez, J. S. (2023). Partners in crime: The feedback loop between metabolic reprogramming and immune checkpoints in the tumor microenvironment. Frontiers in oncology, 12, 1101503. https://doi.org/10.3389/fonc.2022.1101503</p><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1101503/full"><button class="button button1">DOI</button></a><br>
+      <p><i class="fa-solid fa-file-lines" style="font-size: 20px;padding-right: 10px;"></i>Aguilar-Cazares, D., <strong class="blue">Chavez-Dominguez, R.</strong>, Marroquin-Mucino, M., Perez-Medina, M., Benito-Lopez, J. J., Camarena, A., Rumbo-Nava, U., & Lopez-Gonzalez, J. S. (2022). The systemic-level repercussions of cancer-associated inflammation mediators produced in the tumor microenvironment. In Frontiers in endocrinology</p><a href="https://www.frontiersin.org/articles/10.3389/fendo.2022.929572/full"><button class="button button1">DOI</button></a><br>
+      <p style="font-size: 25px;"><a href="Pub_list.html" class="blue">SEE ALL PUBLICATIONS</a></p>
 
     </div>
 
     <div class="footer">
-      <h2 class="fontfam" id="Ninth_Point_Header">Contact</h2>
+      <h2 id="Ninth_Point_Header">Contact</h2>
         <i class="fa-solid fa-envelope" style="font-size: 30px;margin-right: 30px;"></i>rodolfo_chvz@outlook.com<br>
         <br>
         <i class="fa-brands fa-github" style="font-size: 30px;margin-right: 30px;"></i> <a href="https://github.com/necrosnake91" target="_blank" style="font-size: 20px;">necrosnake91</a> <br>
